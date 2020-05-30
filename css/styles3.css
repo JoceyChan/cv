@@ -1,0 +1,19 @@
+.background{
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+hr.line1 {
+  background-color: white;
+  border-style: none;
+  height: 2px;
+  width: 100%;
+
+}
+.contactDet{
+  margin-left: 30px;
+  margin-right: 30px;
+}

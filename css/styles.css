@@ -1,0 +1,92 @@
+body {
+}
+
+/*img {
+  width: 15%;
+}
+*/
+
+div.middle-container:hover{
+  background-color: #dbdbdb;
+}
+div.sec-container:hover{
+  background-color: #dbdbdb;
+}
+div.third-container:hover{
+  background-color: #dbdbdb;
+}
+div.fourth-container:hover{
+  background-color: #dbdbdb;
+}
+a:link {
+  color: #004aad;
+}
+a:visited {
+  color: black;
+}
+
+.background {
+  background-color: #dbdbdb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("CV.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+/*.top-container{
+  text-indent: 50px;
+  position: relative;
+  padding-top: 30px;
+}*/
+.middle-container{
+  margin-left: 10px;
+  background-color: #d6e5fa;
+  width: 90px;
+  height: 50px;
+  border: solid 5px
+
+}
+.sec-container{
+  margin-left: 10px;
+  background-color: #d6e5fa;
+  width: 90px;
+  height: 50px;
+  border: solid 5px
+}
+.third-container{
+  margin-left: 10px;
+  background-color: #d6e5fa;
+  width: 90px;
+  height: 50px;
+  border: solid 5px
+}
+.fourth-container{
+  margin-left: 10px;
+  background-color: #d6e5fa;
+  width: 90px;
+  height: 50px;
+  border: solid 5px
+}
+.myButton {
+	box-shadow: 0px 0px 0px 0px #bbdaf7;
+	background-color:#79bbff;
+	border-radius:21px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	padding:11px 13px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #b7d3f0;
+}
+.myButton:hover {
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

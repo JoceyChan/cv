@@ -1,4 +1,4 @@
-div.middle-container:hover{
+/* div.middle-container:hover{
   background-color: #dbdbdb;
 }
 div.sec-container:hover{
@@ -15,11 +15,14 @@ a:link {
 }
 a:visited {
   color: black;
+} */
+.head{
+  padding: 0px;
 }
-.header {
-  background-color: red;
-  text-align: center;
-  padding: 20px;
+.headSection{
+  padding-top: 50px;
+  /* background-image: url("/Users/joceychan/Documents/GitHub/cv/wallpaper2BG.png"); */
+  background-size:contain;
 }
 img {
   image-rendering: optimizeQuality;
@@ -27,17 +30,82 @@ img {
   width: 250px;
   height: 250px;
 }
-.column{
-  font-size: 30px;
-  float: left;
-  width: 33.33%;
+.oneColumnTable {
+  padding-top: 2%;
 }
-.row:after {
+.headerRow:after {
   content: "";
   display: table;
   clear: both;
 }
-.middle-container{
+.headerColumn{
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 32px;
+  float: left;
+  width: 33.33%;
+}
+.about-grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  padding: 70px;
+  /* background-color: red; */
+}
+.about-grid-container > div {
+  padding-top: 10px;
+  text-align: left;
+  /* background-color: grey; */
+}
+#aboutTitle {
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 40px;
+  float: left;
+}
+.aboutDescription {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.eduandexp-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  /* background-color: red; */
+}
+.eduandexp-grid-container > div {
+  text-align: left;
+  /* background-color: grey; */
+}
+.educationTitle {
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 40px;
+  float: left;
+}
+.experienceTitle {
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 40px;
+  float: right;
+}
+.eduDescription {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.expDescription {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.projectSec{
+  padding-top: 10%;
+  padding-left: 3%;
+}
+/* .middle-container{
   margin-left: 10px;
   background-color: #d6e5fa;
   width: 90px;
@@ -65,4 +133,4 @@ img {
   width: 90px;
   height: 50px;
   border: solid 5px
-}
+} */

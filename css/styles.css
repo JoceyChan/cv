@@ -22,8 +22,8 @@ body{
 .headSection{
   padding-top: 50px;
   padding-bottom: 70px;
-  background-color: #223A58;
-  background-image: url("/Users/joceychan/Documents/GitHub/cv/images/butterflyBGI.png");
+  /* background-color: #223A58; */
+  background-image: url("../images/butterflyBGI.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

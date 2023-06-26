@@ -1,7 +1,7 @@
 // Activate the gliding line when a section is in view
 window.addEventListener('scroll', function() {
   var sections = document.querySelectorAll('section');
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollPosition = window.onscroll || document.documentElement.scrollTop;
 
   sections.forEach(function(section) {
     var topOffset = section.offsetTop;

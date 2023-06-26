@@ -178,7 +178,7 @@ body{
   font-size: 40px;
   padding-left: 90px;
 }
-.skillsDescription{
+.skillsSection{
   font-size: 20px;
   padding-top: 7px;
   padding-left: 110px;
@@ -190,9 +190,18 @@ section {
   margin-bottom: 10px;
   align-items: center;
 }
-#skillType {
-  text-align: left;
-  z-index: 2;
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 60%;
+  height: 3px;
+  background-color: #7e7777;
+  transition: width 0.2s ease-in-out;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 section::before {
   content: "";

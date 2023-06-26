@@ -190,7 +190,10 @@ section {
   margin-bottom: 10px;
   align-items: center;
 }
-
+#skillType {
+  text-align: left;
+  z-index: 2;
+}
 section::before {
   content: "";
   position: absolute;

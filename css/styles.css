@@ -181,32 +181,110 @@ a:active {
   padding-left: 170px;
   padding-bottom: 30px;
 }
-.progress-container{
-  margin-left: 100px;
+
+.ps-grid-container{
+  /* display: grid;
+  grid-template-columns: 30% 50%;
+  gap: 10px;
+  margin-left: 190px;
+  justify-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 20% auto 20% auto;
+  gap: 10px;
+  margin-left: 190px;
   align-items: center;
-  display: flex;
-  justify-content: center;
+  /* margin-right: 100px; */
+  /* padding-left: 90px; */
+  padding-right: 90px;
+  padding-bottom: 30px;
 }
-.progress-text1{
+.ps-grid-container > div {
+  text-align: left;
+}
+.progress-text1, .progress-text2, .progress-text3, .progress-text4, .progress-text5, .progress-text6, .progress-text7, .progress-text8, .progress-text9, .progress-text10, .progress-text11{
   font-size: 22px;
 }
-.progress-bar {
-  width: 50%;
+.progress-bar, .progress-bar2, .progress-bar3, .progress-bar4, .progress-bar5, .progress-bar6, .progress-bar7, .progress-bar8, .progress-bar9, .progress-bar10, .progress-bar11 {
+  width: 70%;
   height: 10px;
-  background-color: red;
+  background-color: rgb(164, 164, 164);
   border-radius: 5px;
   overflow: hidden;
-  margin-left: 20%;
 }
-
-.progress {
+.progress, .progress2, .progress3, .progress4, .progress5, .progress6, .progress7, .progress8, .progress9, .progress10, .progress11{
   height: 100%;
-  background-color: #007bff;
+  background-color: #fb7c38;
   width: 0%;
   transition: width 0.5s ease-in-out;
   margin-bottom: 10px;;
 }
 
+/* Tech Grid */
+.tech-grid-container{
+  display: grid;
+  grid-template-columns: 20% auto 20% auto;
+  gap: 10px;
+  margin-left: 190px;
+  align-items: center;
+  /* margin-right: 100px; */
+  /* padding-left: 90px; */
+  padding-right: 90px;
+  padding-bottom: 30px;
+}
+.tech-grid-container > div {
+  text-align: left;
+}
+.progress-TechSkill1, .progress-TechSkill2, .progress-TechSkill3, .progress-TechSkill4, .progress-TechSkill5, .progress-TechSkill6, .progress-TechSkill7, .progress-TechSkill8, .progress-TechSkill9, .progress-TechSkill10{
+  font-size: 22px;
+}
+.progress-Techbar, .progress-Techbar2, .progress-Techbar3, .progress-Techbar4, .progress-Techbar5, .progress-Techbar6, .progress-Techbar7, .progress-Techbar8, .progress-Techbar9, .progress-Techbar10{
+  width: 70%;
+  height: 10px;
+  background-color: rgb(164, 164, 164);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-Tech1, .progress-Tech2, .progress-Tech3, .progress-Tech4, .progress-Tech5, .progress-Tech6, .progress-Tech7, .progress-Tech8, .progress-Tech9, .progress-Tech10{
+  height: 100%;
+  background-color: #FFD31A;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  margin-bottom: 10px;;
+}
+
+/* Lang Grid */
+.lang-grid-container {
+  display: grid;
+  grid-template-columns: 20% auto 20% auto;
+  gap: 10px;
+  margin-left: 190px;
+  align-items: center;
+  /* margin-right: 100px; */
+  /* padding-left: 90px; */
+  padding-right: 90px;
+  padding-bottom: 50px;
+}
+.lang-grid-container > div {
+  text-align: left;
+}
+.progress-LangSkill1, .progress-LangSkill2 {
+  font-size: 22px;
+}
+.progress-LangBar1, .progress-LangBar2 {
+  width: 70%;
+  height: 10px;
+  background-color: rgb(164, 164, 164);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-Lang1, .progress-Lang2 {
+  height: 100%;
+  background-color: #538dd4;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+  margin-bottom: 10px;;
+}
 .skillsSection{
   font-size: 22px;
   padding-top: 7px;

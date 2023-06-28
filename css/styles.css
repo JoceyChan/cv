@@ -214,7 +214,7 @@ a:active {
 }
 .progress, .progress2, .progress3, .progress4, .progress5, .progress6, .progress7, .progress8, .progress9, .progress10, .progress11{
   height: 100%;
-  background-color: #fb7c38;
+  background-color: #257b54;
   width: 0%;
   transition: width 0.5s ease-in-out;
   margin-bottom: 10px;;

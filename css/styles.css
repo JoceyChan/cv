@@ -241,7 +241,7 @@ a:active {
   height: 100%;
   background-color: #FFD31A;
   width: 0%;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.5s ease-in-out;
   margin-bottom: 10px;;
 }
 

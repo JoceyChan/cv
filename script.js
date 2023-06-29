@@ -42,85 +42,44 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Technologies Skill
-window.addEventListener('scroll', function() {
+window.addEventListener('DOMContentLoaded', function() {
   var progressTechBar1 = document.querySelector('.progress-Tech1');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressTechBar1.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
-  var progressTechBar2 = document.querySelector('.progress-Tech2');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 50;
-
-  progressTechBar2.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
+  var progressTechBar2 = document.querySelector('.progress-Tech2');  
   var progressTechBar3 = document.querySelector('.progress-Tech3');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 40;
-
-  progressTechBar3.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressTechBar4 = document.querySelector('.progress-Tech4');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 50;
-
-  progressTechBar4.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
-  var progressTechBar5 = document.querySelector('.progress-Tech5');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressTechBar5.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
+  var progressTechBar5 = document.querySelector('.progress-Tech5')
   var progressTechBar6 = document.querySelector('.progress-Tech6');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 80;
-
-  progressTechBar6.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressTechBar7 = document.querySelector('.progress-Tech7');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 80;
-
-  progressTechBar7.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressTechBar8 = document.querySelector('.progress-Tech8');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 80;
-
-  progressTechBar8.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressTechBar9 = document.querySelector('.progress-Tech9');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 89;
-
-  progressTechBar9.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressTechBar10 = document.querySelector('.progress-Tech10');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 80;
+  var section = document.querySelector('.tech-grid-container');
+  var sectionTop = section.offsetTop;
+  var sectionBottom = sectionTop + section.offsetHeight;
+  var windowHeight = window.innerHeight;
+  var loaded = false; // Flag to track if the progress bars have been loaded
 
-  progressTechBar10.style.width = progressPercentage + '%';
+  function updateProgressBars() {
+    var windowScroll = window.pageYOffset;
+    var windowBottom = windowScroll + windowHeight;
+
+    if (windowBottom >= sectionTop && !loaded) {
+      progressTechBar1.style.width = '90%';
+      progressTechBar2.style.width = '50%';
+      progressTechBar3.style.width = '40%';
+      progressTechBar4.style.width = '50%';
+      progressTechBar5.style.width = '90%';
+      progressTechBar6.style.width = '80%';
+      progressTechBar7.style.width = '80%';
+      progressTechBar8.style.width = '70%';
+      progressTechBar9.style.width = '90%';
+      progressTechBar10.style.width = '80%';
+
+      loaded = true; // Set the flag to true once the progress bars are loaded
+    }
+  }
+
+  window.addEventListener('scroll', updateProgressBars);
 });
 
 // Langauge Skills

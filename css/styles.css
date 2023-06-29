@@ -183,19 +183,11 @@ a:active {
 }
 
 .ps-grid-container{
-  /* display: grid;
-  grid-template-columns: 30% 50%;
-  gap: 10px;
-  margin-left: 190px;
-  justify-items: center;
-  align-items: center; */
   display: grid;
   grid-template-columns: 20% auto 20% auto;
   gap: 10px;
   margin-left: 190px;
   align-items: center;
-  /* margin-right: 100px; */
-  /* padding-left: 90px; */
   padding-right: 90px;
   padding-bottom: 30px;
 }
@@ -249,7 +241,7 @@ a:active {
   height: 100%;
   background-color: #FFD31A;
   width: 0%;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.2s ease-in-out;
   margin-bottom: 10px;;
 }
 
@@ -282,7 +274,7 @@ a:active {
   height: 100%;
   background-color: #538dd4;
   width: 0%;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.2s ease-in-out;
   margin-bottom: 10px;;
 }
 .skillsSection{
@@ -314,7 +306,7 @@ section::before {
   width: 60%;
   height: 3px;
   background-color: #7e7777;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.1s ease-in-out;
   transform: translateY(-50%);
   z-index: 1;
 }

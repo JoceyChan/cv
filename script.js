@@ -1,107 +1,44 @@
-// Activate the gliding line when a section is in view
-// window.addEventListener('scroll', function() {
-//   var sections = document.querySelectorAll('section');
-//   var scrollPosition = window.onscroll || document.documentElement.scrollTop;
 
-//   sections.forEach(function(section) {
-//     var topOffset = section.offsetTop;
-//     var bottomOffset = topOffset + section.offsetHeight;
-
-//     if (scrollPosition >= topOffset && scrollPosition < bottomOffset) {
-//       section.classList.add('active');
-//     } else {
-//       section.classList.remove('active');
-//     }
-//   });
-// });
-
-window.addEventListener('scroll', function() {
+window.addEventListener('DOMContentLoaded', function() {
   var progressBar = document.querySelector('.progress');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressBar.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar2 = document.querySelector('.progress2');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressBar2.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar3 = document.querySelector('.progress3');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 100;
-
-  progressBar3.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar4 = document.querySelector('.progress4');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressBar4.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar5 = document.querySelector('.progress5');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 100;
-
-  progressBar5.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar6 = document.querySelector('.progress6');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressBar6.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar7 = document.querySelector('.progress7');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 100;
-
-  progressBar7.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar8 = document.querySelector('.progress8');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 100;
-
-  progressBar8.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar9 = document.querySelector('.progress9');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressBar9.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar10 = document.querySelector('.progress10');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
-
-  progressBar10.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
   var progressBar11 = document.querySelector('.progress11');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
+  var section = document.querySelector('.ps-grid-container');
+  var sectionTop = section.offsetTop;
+  var sectionBottom = sectionTop + section.offsetHeight;
+  var windowHeight = window.innerHeight;
+  var loaded = false; // Flag to track if the progress bars have been loaded
 
-  progressBar11.style.width = progressPercentage + '%';
+  function updateProgressBars() {
+    var windowScroll = window.pageYOffset;
+    var windowBottom = windowScroll + windowHeight;
+
+    if (windowBottom >= sectionTop && !loaded) {
+      progressBar.style.width = '90%';
+      progressBar2.style.width = '90%';
+      progressBar3.style.width = '100%';
+      progressBar4.style.width = '90%';
+      progressBar5.style.width = '100%';
+      progressBar6.style.width = '90%';
+      progressBar7.style.width = '100%';
+      progressBar8.style.width = '100%';
+      progressBar9.style.width = '90%';
+      progressBar10.style.width = '90%';
+      progressBar11.style.width = '90%';
+
+      loaded = true; // Set the flag to true once the progress bars are loaded
+    }
+  }
+
+  window.addEventListener('scroll', updateProgressBars);
 });
 
 // Technologies Skill

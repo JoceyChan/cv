@@ -24,12 +24,12 @@ window.addEventListener('DOMContentLoaded', function() {
     if (windowBottom >= sectionTop && !loaded) {
       progressBar.style.width = '90%';
       progressBar2.style.width = '90%';
-      progressBar3.style.width = '100%';
+      progressBar3.style.width = '95%';
       progressBar4.style.width = '90%';
-      progressBar5.style.width = '100%';
+      progressBar5.style.width = '95%';
       progressBar6.style.width = '90%';
-      progressBar7.style.width = '100%';
-      progressBar8.style.width = '100%';
+      progressBar7.style.width = '95%';
+      progressBar8.style.width = '95%';
       progressBar9.style.width = '90%';
       progressBar10.style.width = '90%';
       progressBar11.style.width = '90%';
@@ -83,19 +83,26 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Langauge Skills
-window.addEventListener('scroll', function() {
+window.addEventListener('DOMContentLoaded', function() {
   var progressLangBar1 = document.querySelector('.progress-Lang1');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
+  var progressLangBar2 = document.querySelector('.progress-Lang2');  
+  var section = document.querySelector('.lang-grid-container');
+  var sectionTop = section.offsetTop;
+  var sectionBottom = sectionTop + section.offsetHeight;
+  var windowHeight = window.innerHeight;
+  var loaded = false; // Flag to track if the progress bars have been loaded
 
-  progressLangBar1.style.width = progressPercentage + '%';
-});
-window.addEventListener('scroll', function() {
-  var progressLangBar2 = document.querySelector('.progress-Lang2');
-  var windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progressPercentage = (windowScroll / windowHeight) * 90;
+  function updateProgressBars() {
+    var windowScroll = window.pageYOffset;
+    var windowBottom = windowScroll + windowHeight;
 
-  progressLangBar2.style.width = progressPercentage + '%';
+    if (windowBottom >= sectionTop && !loaded) {
+      progressLangBar1.style.width = '90%';
+      progressLangBar2.style.width = '90%';
+
+      loaded = true; // Set the flag to true once the progress bars are loaded
+    }
+  }
+
+  window.addEventListener('scroll', updateProgressBars);
 });

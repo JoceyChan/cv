@@ -108,7 +108,7 @@ body{
   margin-left: 90px;
   margin-right: 110px;
 }
-#aboutTitle {
+#about {
   font-family: playfair display,serif;
   font-style: italic;
   font-size: 40px;
@@ -323,7 +323,7 @@ body {
     font-size: 30px;
     text-align: center;
   }
-  #aboutTitle{
+  #about{
     font-size: 30px;
     margin-left: 20px;
   }

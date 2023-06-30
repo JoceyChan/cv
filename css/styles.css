@@ -148,19 +148,24 @@ body{
   font-family: playfair display,serif;
   font-style: italic;
   font-size: 40px;
+  padding-left: 120px;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 /* Soft Grid */
 .ps-grid-container{
   display: grid;
-  grid-template-columns: 20% auto 20% auto;
+  grid-template-columns: 25% 25% 25% 25%;
   gap: 10px;
-  margin-left: 190px;
   align-items: center;
-  padding-right: 90px;
   padding-bottom: 30px;
+  align-content: space-around;
+  justify-items: center;
+  align-items: baseline;
 }
 .ps-grid-container > div {
   text-align: left;
+  margin-left: 5px;
 }
 .progress-text1, .progress-text2, .progress-text3, .progress-text4, .progress-text5, .progress-text6, .progress-text7, .progress-text8, .progress-text9, .progress-text10, .progress-text11, 
 .progress-TechSkill1, .progress-TechSkill2, .progress-TechSkill3, .progress-TechSkill4, .progress-TechSkill5, .progress-TechSkill6, .progress-TechSkill7, .progress-TechSkill8, 
@@ -168,7 +173,7 @@ body{
   font-size: 22px;
   font-family: playfair display,serif;
 }
-.progress-bar, .progress-bar2, .progress-bar3, .progress-bar4, .progress-bar5, .progress-bar6, .progress-bar7, .progress-bar8, 
+.progress-bar1, .progress-bar2, .progress-bar3, .progress-bar4, .progress-bar5, .progress-bar6, .progress-bar7, .progress-bar8, 
 .progress-bar9, .progress-bar10, .progress-bar11, .progress-Techbar, .progress-Techbar2, .progress-Techbar3, .progress-Techbar4, .progress-Techbar5, 
 .progress-Techbar6, .progress-Techbar7, .progress-Techbar8, .progress-Techbar9, .progress-Techbar10, .progress-LangBar1, .progress-LangBar2 {
   width: 70%;
@@ -177,7 +182,7 @@ body{
   border-radius: 5px;
   overflow: hidden;
 }
-.progress, .progress2, .progress3, .progress4, .progress5, .progress6, .progress7, .progress8, .progress9, .progress10, .progress11,
+.progress1, .progress2, .progress3, .progress4, .progress5, .progress6, .progress7, .progress8, .progress9, .progress10, .progress11,
 .progress-Tech1, .progress-Tech2, .progress-Tech3, .progress-Tech4, .progress-Tech5,  .progress-Tech6, .progress-Tech7, .progress-Tech8,
 .progress-Tech9, .progress-Tech10, .progress-Lang1, .progress-Lang2 {
   height: 100%;
@@ -345,12 +350,17 @@ body {
   .eduAndExpTitle {
     font-family: playfair display,serif;
     font-style: italic;
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
   }
   .eduAndExpDescription {
-    font-family: playfair display,serif;
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 0%;
+  }
+  #skillsLangTechTitle {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0%;
+    margin-top: 20px;
   }
 }

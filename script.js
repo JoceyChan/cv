@@ -1,6 +1,6 @@
-
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
 window.addEventListener('DOMContentLoaded', function() {
-  var progressBar = document.querySelector('.progress');
+  var progressBar1 = document.querySelector('.progress1');
   var progressBar2 = document.querySelector('.progress2');
   var progressBar3 = document.querySelector('.progress3');
   var progressBar4 = document.querySelector('.progress4');
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function() {
     var windowBottom = windowScroll + windowHeight;
 
     if (windowBottom >= sectionTop && !loaded) {
-      progressBar.style.width = '90%';
+      progressBar1.style.width = '90%';
       progressBar2.style.width = '90%';
       progressBar3.style.width = '95%';
       progressBar4.style.width = '90%';

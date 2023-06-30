@@ -76,19 +76,19 @@ body{
   width: 33.33%;
   text-decoration: none;
 }
-a:link {
+.headerColumn a:link {
   color: white;
   text-decoration: none;
 }
-a:visited {
+.headerColumn a:visited {
   color: white;
   text-decoration: none;
 }
-a:hover {
+.headerColumn a:hover {
   color: #FFD31A;
    
 }
-a:active {
+.headerColumn a:active {
   color: white;
   background-color: transparent;
   text-decoration: underline;
@@ -277,8 +277,4 @@ body {
 .projectSec{
   padding-top: 10%;
   padding-left: 3%;
-}
-/* Styles for mobile devices (iPhone XR width) */
-@media screen and (max-width: 896px) {
-  /* Add your responsive styles here */
 }

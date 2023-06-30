@@ -16,10 +16,12 @@ body{
   height: 250px;
 }
 .jocelynName{
+  font-family: playfair display,serif;
   text-align: center;
   font-size: 50px; 
   color: white; 
   margin-bottom: 2px;
+  margin-top: 10px;
 }
 .despHeaderWords-container {
   display: grid;
@@ -35,7 +37,6 @@ body{
   font-size: 30px;
   color: white;
   align-items: center;
-
 }
 .descripWordOne {
   font-family: playfair display,serif;
@@ -43,7 +44,6 @@ body{
   color: white;
   text-align: right;
   align-items: baseline;
-
 }
 .descripWordTwo {
   font-family: playfair display,serif;
@@ -51,7 +51,6 @@ body{
   color: white;
   text-align: center;
   align-items: baseline;
-
 }
 .descripWordThree {
   font-family: playfair display,serif;
@@ -59,7 +58,6 @@ body{
   color: white;
   text-align: left;
   align-items: baseline;
-
 }
 .oneColumnTable {
   padding-top: 2%;
@@ -280,6 +278,42 @@ body {
   padding-left: 3%;
 }
 @media (max-width: 900px){
+  .JocelynProfileImage {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+  }
+  .jocelynName{
+    font-family: playfair display,serif;
+    text-align: center;
+    font-size: 35px; 
+    color: white; 
+  }
+  .descripWordOne {
+    font-size: 15px;
+  }
+  .descripWordTwo {
+    font-size: 15px;
+  }
+  .descripWordThree {
+    font-size: 15px;
+  }
+  .oneColumnTable {
+    padding-top: 2%;
+  }
+  .headerRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .headerColumn{
+    font-family: playfair display,serif;
+    font-style: italic;
+    font-size: 25px;
+    float: left;
+    width: 33.33%;
+    text-decoration: none;
+  }
   #aboutTitle{
     font-size: 30px;
     margin-left: 20px;

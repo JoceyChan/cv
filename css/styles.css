@@ -280,22 +280,3 @@ body {
   padding-left: 3%;
 }
 /* Styles for mobile devices (iPhone XR width) */
-@media screen and (max-width: 828px) {
-  section {
-    height: 20px;
-  }
-  tech-grid-container {
-    display: grid;
-    grid-template-columns: 25% auto 25% auto;
-    gap: 16px;
-    column-gap: 30px;
-    margin-left: 170px;
-    align-items: center;
-    padding-bottom: 30px;
-    align-content: center;
-    justify-items: center;
-  }
-  .progress-TechSkill3 {
-  font-size: 15px;
-  }
-}

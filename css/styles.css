@@ -1,6 +1,7 @@
 body{
   margin: 0%;
 }
+/* Home Page header Section */
 .headSection{
   padding-top: 50px;
   padding-bottom: 70px;
@@ -86,13 +87,12 @@ body{
 .headerColumn a:hover {
   color: #FFD31A; 
 }
-
 .headerColumn a:active {
   color: white;
   background-color: transparent;
   text-decoration: underline;
 }
-
+/* Body Section 1 About */
 .about-grid-container {
   display: grid;
   grid-template-columns: auto;
@@ -117,6 +117,7 @@ body{
   font-size: 22px;
   font-family: playfair display,serif;
 }
+/* Education and Experience Section */
 .eduandexp-grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -152,12 +153,13 @@ body{
   font-size: 22px;
   padding-left: 10px;
 }
+/* Skills Section */
 #skillsLangTechTitle {
   font-family: playfair display,serif;
   font-style: italic;
   font-size: 40px;
 }
-
+/* Soft Grid */
 .ps-grid-container{
   display: grid;
   grid-template-columns: 20% auto 20% auto;

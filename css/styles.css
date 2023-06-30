@@ -131,17 +131,11 @@ body{
   margin-left: 50px;
   margin-right: 50px;
 }
-.educationTitle {
+.eduAndExpTitle {
   font-family: playfair display,serif;
   font-style: italic;
   font-size: 40px;
   float: left;
-}
-.experienceTitle {
-  font-family: playfair display,serif;
-  font-style: italic;
-  font-size: 40px;
-  float: right;
 }
 .eduDescription {
   font-family: playfair display,serif;
@@ -341,4 +335,4 @@ body {
     margin-right:30px;
     font-size: 15px;
   }
-}
+  

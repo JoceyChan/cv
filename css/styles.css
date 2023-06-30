@@ -137,16 +137,12 @@ body{
   font-size: 40px;
   float: left;
 }
-.eduDescription {
+.eduAndExpDescription {
   font-family: playfair display,serif;
   font-size: 22px;
   padding-left: 10px;
 }
-.expDescription {
-  font-family: playfair display,serif;
-  font-size: 22px;
-  padding-left: 10px;
-}
+
 /* Skills Section */
 #skillsLangTechTitle {
   font-family: playfair display,serif;
@@ -335,4 +331,26 @@ body {
     margin-right:30px;
     font-size: 15px;
   }
-  
+  .eduandexp-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 7px;
+    padding-top: 10px;
+  }
+  .eduandexp-grid-container > div {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .eduAndExpTitle {
+    font-family: playfair display,serif;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+  }
+  .eduAndExpDescription {
+    font-family: playfair display,serif;
+    font-size: 12px;
+    padding-left: 0%;
+  }
+}

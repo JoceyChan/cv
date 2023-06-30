@@ -27,7 +27,6 @@ body{
   grid-template-columns: auto auto auto auto auto;
   padding-left: 70px;
   padding-right: 70px;
-  /* align-items: baseline; */
   justify-content: center;
   gap: 14px;
 }
@@ -115,7 +114,6 @@ a:active {
   font-family: playfair display,serif;
   font-style: italic;
   font-size: 40px;
-  /* float: left; */
 }
 .aboutDescription {
   font-size: 22px;
@@ -128,7 +126,6 @@ a:active {
   padding-top: 30px;
   padding-left: 90px;
   padding-right: 90px;
-  /* padding-bottom: 0px; */
 }
 .eduandexp-grid-container > div {
   text-align: left;
@@ -207,8 +204,6 @@ a:active {
   gap: 10px;
   margin-left: 190px;
   align-items: center;
-  /* margin-right: 100px; */
-  /* padding-left: 90px; */
   padding-right: 90px;
   padding-bottom: 30px;
 }
@@ -272,12 +267,6 @@ section.active::before {
 body {
   scroll-behavior: smooth;
 }
-
-@media screen and (min-width: 768px) {
-  section {
-    height: 50px;
-  }
-}
 .techDescription{
   font-size: 20px;
   padding-left: 10px;
@@ -289,4 +278,24 @@ body {
 .projectSec{
   padding-top: 10%;
   padding-left: 3%;
+}
+/* Styles for mobile devices (iPhone XR width) */
+@media screen and (max-width: 828px) {
+  section {
+    height: 20px;
+  }
+  tech-grid-container {
+    display: grid;
+    grid-template-columns: 25% auto 25% auto;
+    gap: 16px;
+    column-gap: 30px;
+    margin-left: 170px;
+    align-items: center;
+    padding-bottom: 30px;
+    align-content: center;
+    justify-items: center;
+  }
+  .progress-TechSkill3 {
+  font-size: 15px;
+  }
 }

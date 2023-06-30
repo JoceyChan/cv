@@ -17,6 +17,53 @@ body{
   color: white; 
   margin-bottom: 2px;
 }
+.head-grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-items: stretch;
+  justify-content: space-evenly;
+}
+.home-bar-select, .contact-bar-select {
+  font-family: playfair display,serif;
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  font-style: italic;
+
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFD31A;
+   
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.project-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  padding-top: 60px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 50px;
+}
+.project-grid-container > div {
+  text-align: left;
+  padding-left: 90px;
+  padding-right: 90px;
+}
 .project-grid-container {
   display: grid;
   grid-template-columns: auto auto;

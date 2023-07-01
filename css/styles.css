@@ -391,5 +391,14 @@ body {
   .progress-TechSkill9, .progress-TechSkill10{
     font-size: 15px;
   }
-  
+  /* Lang Grid */
+  .lang-grid-container {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    align-items: baseline;
+    grid-template-columns: 25% 24% 20% 25%;
+  }
+  .progress-LangSkill1, .progress-LangSkill2 {
+    font-size: 15px;
+  }
 }

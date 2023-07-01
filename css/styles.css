@@ -364,9 +364,9 @@ body {
   }
   /* Soft Grid */
   .ps-grid-container{
-    display: grid;
-    grid-template-columns: auto;
     gap: 5px;
+    align-items: center;
+    padding-bottom: 0%;
   }
   .ps-grid-container > div {
     text-align: center;
@@ -380,8 +380,9 @@ body {
   }
   /* Tech Grid */
   .tech-grid-container{
-    padding-bottom: 20px;
     align-items: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
   }
   .tech-grid-container > div {
     margin-right: 5px;

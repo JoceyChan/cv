@@ -118,6 +118,7 @@ a:active {
 @media (max-width: 900px){
   .projectName{
     font-size: 35px; 
+    text-align: center;
   }
   .head-grid-container{
     display: grid;
@@ -125,6 +126,8 @@ a:active {
     align-items: center;
     margin-top: 8px;
     gap: 10px;
+    padding-left: 0%;
+    padding-right: 20px;
   }
   .coll {
     font-size: 30px;

@@ -71,9 +71,9 @@ window.addEventListener('DOMContentLoaded', function() {
       progressTechBar5.style.width = '90%';
       progressTechBar6.style.width = '80%';
       progressTechBar7.style.width = '80%';
-      progressTechBar8.style.width = '70%';
+      progressTechBar8.style.width = '80%';
       progressTechBar9.style.width = '90%';
-      progressTechBar10.style.width = '80%';
+      progressTechBar10.style.width = '70%';
 
       loaded = true; // Set the flag to true once the progress bars are loaded
     }

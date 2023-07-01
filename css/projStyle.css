@@ -58,7 +58,8 @@ body{
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 30px;
-  padding-top: 40px;
+  padding-top: 100px;
+  margin-bottom: 50px;
 }
 .project-grid-container > div {
   text-align: left;
@@ -69,9 +70,8 @@ body{
   display: grid;
   grid-template-columns: auto;
   gap: 10px;
-  padding-top: 60px;
+  padding-top: 20px;
 }
-
 #projName{
   font-family: playfair display,serif;
   font-style: italic;
@@ -94,34 +94,22 @@ body{
   font-family: playfair display,serif;
   font-size: 17px;
 }
-.externalSites{
-  margin-top: 2%;
-  font-family: playfair display,serif;
-  font-style: italic;
-  font-size: 15px;
-}
-.externalSites a:link {
+a:link {
   color: black;
   text-decoration: none;
 }
-.externalSites a:visited {
+a:visited {
   color: #145099;
   text-decoration: none;
 }
-.externalSites a:hover {
+a:hover {
   color: #D66B31 ;
   text-decoration-line: underline;
-   
 }
-.externalSites a:active {
+a:active {
   color: black;
   background-color: transparent;
   text-decoration: underline;
-}
-.date{
-  font-family: playfair display,serif;
-  font-style: italic;
-  font-size: 15px;
 }
 .img {
   width:50px;

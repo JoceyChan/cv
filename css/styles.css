@@ -155,16 +155,14 @@ body{
 /* Soft Grid */
 .ps-grid-container{
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: auto 25% auto 25%;
   gap: 10px;
-  align-items: center;
   padding-bottom: 30px;
-  align-content: space-around;
   justify-items: center;
   align-items: baseline;
 }
 .ps-grid-container > div {
-  text-align: left;
+  text-align: center;
   margin-left: 5px;
 }
 .progress-text1, .progress-text2, .progress-text3, .progress-text4, .progress-text5, .progress-text6, .progress-text7, .progress-text8, .progress-text9, .progress-text10, .progress-text11, 

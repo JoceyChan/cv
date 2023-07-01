@@ -16,7 +16,7 @@ body{
   width: 250px;
   height: 250px;
 }
-.jocelynName{
+#jocelynName{
   font-family: playfair display,serif;
   text-align: center;
   font-size: 50px; 
@@ -272,13 +272,16 @@ body {
   padding-top: 10%;
   padding-left: 3%;
 }
+.arrow{
+  font-size: 0px;
+}
 @media (max-width: 900px){
   .JocelynProfileImage {
     border-radius: 100%;
     width: 150px;
     height: 150px;
   }
-  .jocelynName{
+  #jocelynName{
     font-family: playfair display,serif;
     text-align: center;
     font-size: 35px; 
@@ -286,7 +289,7 @@ body {
     padding-top: 5px;
     margin-bottom: 0px;
   }
-  .jocelynName p{
+  #jocelynName p{
     margin-bottom: 0px;
   }
   .despHeaderWords-container {
@@ -400,5 +403,29 @@ body {
   }
   .progress-LangSkill1, .progress-LangSkill2 {
     font-size: 15px;
+  }
+  .arrow{
+    font-size: 50px;
+    text-align: center;
+  }
+  .arrow p{
+    margin-bottom: 0px;
+  }
+  .arrow a:link {
+    color: black;
+    text-decoration: none;
+  }
+  .arrow a:visited {
+    color: #145099;
+    text-decoration: none;
+  }
+  .arrow a:hover {
+    color: #D66B31 ;
+    text-decoration-line: none;
+  }
+  .arrow a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
   }
 }

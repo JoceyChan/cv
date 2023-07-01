@@ -122,5 +122,19 @@ body{
   height:60px;
 }
 @media (max-width: 900px){
-  
+  .projectName{
+    font-size: 35px; 
+  }
+  .head-grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    margin-top: 8px;
+    gap: 10px;
+  }
+  .coll {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 }

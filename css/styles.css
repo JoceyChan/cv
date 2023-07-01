@@ -193,15 +193,15 @@ body{
 /* Tech Grid */
 .tech-grid-container{
   display: grid;
-  grid-template-columns: 20% auto 20% auto;
+  grid-template-columns: 25% 25% auto 25%;
   gap: 10px;
-  margin-left: 190px;
-  align-items: center;
-  padding-right: 90px;
   padding-bottom: 30px;
+  justify-items: center;
+  align-items: baseline;
 }
 .tech-grid-container > div {
-  text-align: left;
+  text-align: center;
+  margin-left: 5px;
 }
 
 /* Lang Grid */
@@ -360,7 +360,7 @@ body {
     text-align: center;
     padding-left: 0%;
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   /* Soft Grid */
   .ps-grid-container{
@@ -378,4 +378,17 @@ body {
   .progress-text11{
     font-size: 15px;
   }
+  /* Tech Grid */
+  .tech-grid-container{
+    padding-bottom: 20px;
+    align-items: center;
+  }
+  .tech-grid-container > div {
+    margin-right: 5px;
+  }
+  .progress-TechSkill1, .progress-TechSkill2, .progress-TechSkill3, .progress-TechSkill4, .progress-TechSkill5, .progress-TechSkill6, .progress-TechSkill7, .progress-TechSkill8, 
+  .progress-TechSkill9, .progress-TechSkill10{
+    font-size: 15px;
+  }
+  
 }

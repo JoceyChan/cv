@@ -360,5 +360,22 @@ body {
     text-align: center;
     padding-left: 0%;
     margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  /* Soft Grid */
+  .ps-grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+  }
+  .ps-grid-container > div {
+    text-align: center;
+    margin-left: 0;
+    padding-bottom: 0%;
+  }
+  .progress-text1, .progress-text2, .progress-text3, .progress-text4, .progress-text5,
+  .progress-text6, .progress-text7, .progress-text8, .progress-text9, .progress-text10,
+  .progress-text11{
+    font-size: 15px;
   }
 }

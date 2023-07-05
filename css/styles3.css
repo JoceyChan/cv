@@ -49,6 +49,13 @@
   background-color: transparent;
   text-decoration: underline;
 }
+#title{
+  font-family: playfair display,serif;
+  text-align: left;
+  font-size: 30px; 
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
 hr.line1 {
   background-color: white;
   border-style: none;

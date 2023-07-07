@@ -493,7 +493,8 @@ body {
     font-size: 15px;
     padding-left: 0%;
   }
-  #skillsLangTechTitle {
+  /* Skill Section */
+  #skills {
     font-size: 30px;
     text-align: center;
     padding-left: 0%;
@@ -539,28 +540,125 @@ body {
   .progress-LangSkill1, .progress-LangSkill2 {
     font-size: 15px;
   }
+  /* Project Section */
+  #projects {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .project-grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+  }
+  .project-grid-container > div {
+    margin-top: 20px;
+    margin-left:15px;
+    margin-right:15px;
+    font-size: 15px;
+  }
+  .projSec{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  #projName{
+    font-family: playfair display,serif;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+  }
+  #company{
+    font-family: playfair display,serif;
+    font-style: italic;
+    font-size: 19px;
+    text-align: center;
+  }
+  #year{
+    font-family: playfair display,serif;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+  }
+  #description{
+    font-family: playfair display,serif;
+    font-size: 16px;
+  }
+  /* End of Page Section */
+  .endSection{
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
+  #endName{
+    font-size: 33px; 
+    margin-bottom: 2px;
+    margin-top: 5px;
+  }
+  #email{
+    text-decoration: none;
+    font-size: 20px; 
+    margin-bottom: 2px;
+    margin-top: 5px;
+  }
+  #email a {
+    color: white; 
+    text-decoration: none;
+  }
+  #email a:hover{
+    text-decoration: none;
+    color: #FFD31A;
+  }
+  #email a:active{
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .socials{
+    padding-top: 10px;
+  }
+  .fa-linkedin, .fa-github, .fa-instagram{
+    color: white;
+    text-decoration: none;
+  }
+  .fa-linkedin:hover, .fa-github:hover, .fa-instagram:hover, .linktree:hover{
+    opacity: 0.9;
+    color: white;
+    background-color: #0d4560;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 30%;
+    padding: 13px;
+  }
   .arrow{
     font-size: 50px;
     text-align: center;
+    padding: 0%;
+    margin: 0%;
   }
   .arrow p{
-    margin-bottom: 0px;
+    padding-bottom: 0%;
+    margin: 0%;
   }
   .arrow a:link {
     color: black;
     text-decoration: none;
   }
   .arrow a:visited {
-    color: #145099;
+    color: white;
     text-decoration: none;
   }
   .arrow a:hover {
-    color: #D66B31 ;
+    color: #FFD31A ;
     text-decoration-line: none;
   }
   .arrow a:active {
-    color: black;
-    background-color: transparent;
+    color: #FFD31A;
     text-decoration: none;
   }
 }

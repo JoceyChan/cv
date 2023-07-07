@@ -144,7 +144,7 @@ body{
 }
 
 /* Skills Section */
-#skillsLangTechTitle {
+#skills {
   font-family: playfair display,serif;
   font-style: italic;
   font-size: 40px;
@@ -268,9 +268,74 @@ body {
   font-size: 20px;
   padding-left: 10px;
 }
-.projectSec{
-  padding-top: 10%;
-  padding-left: 3%;
+
+/* Project Section */
+#projects{
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 40px;
+  padding-left: 120px;
+  margin-top: 15px;
+}
+.project-grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  padding-top: 20px;
+  margin-bottom: 70px;
+  align-items: baseline;
+}
+.project-grid-container > div {
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.projSec{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+#projName{
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 24px;
+  float: left;
+  padding-left: 10px;
+}
+#company{
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 19px;
+  float: left;
+  padding-left: 10px;
+}
+#year{
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 18px;
+  float: left;
+  padding-left: 10px;
+}
+#description{
+  font-family: playfair display,serif;
+  font-size: 19px;
+}
+#year a:link {
+  color: black;
+  text-decoration: none;
+}
+#year a:visited {
+  color: #145099;
+  text-decoration: none;
+}
+#year a:hover {
+  color: #D66B31 ;
+  text-decoration-line: underline;
+}
+#year a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
 }
 .arrow{
   font-size: 0px;

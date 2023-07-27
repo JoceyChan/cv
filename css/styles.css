@@ -117,6 +117,28 @@ body{
   font-size: 22px;
   font-family: playfair display,serif;
 }
+
+#ResumeButton {
+  width: 180px;
+  height: 50px;
+  font-family: playfair display,serif;
+  font-style: italic;
+  font-size: 20px;
+  background-color:rgb(128, 128, 128);
+  border-radius: 7px;
+}
+#ResumeButton:visited {
+  color:black;
+}
+#ResumeButton:hover {
+  color:white;
+  text-decoration: none;
+}
+#ResumeButton:active{
+  color:black;
+  text-decoration: underline;
+}
+
 /* Education and Experience Section */
 .eduandexp-grid-container {
   display: grid;

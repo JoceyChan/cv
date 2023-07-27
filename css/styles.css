@@ -117,14 +117,16 @@ body{
   font-size: 22px;
   font-family: playfair display,serif;
 }
-
+#buttons {
+  padding-top: 30px;
+}
 #ResumeButton {
-  width: 180px;
+  width: 190px;
   height: 50px;
   font-family: playfair display,serif;
   font-style: italic;
   font-size: 20px;
-  background-color:rgb(128, 128, 128);
+  background-color:rgb(201, 201, 201);
   border-radius: 7px;
 }
 #ResumeButton:visited {
@@ -133,10 +135,12 @@ body{
 #ResumeButton:hover {
   color:white;
   text-decoration: none;
+  background-color: #145099;
 }
 #ResumeButton:active{
-  color:black;
+  color:white;
   text-decoration: underline;
+  background-color: #145099;
 }
 
 /* Education and Experience Section */

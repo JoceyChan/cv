@@ -499,6 +499,16 @@ body {
     margin-right:30px;
     font-size: 15px;
   }
+  /* Resume Download Button */
+  #buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #ResumeButton {
+    width: 135px;
+    height: 40px;
+    font-size: 15px;
+  }
   /* Education and Experience Section */
   .eduandexp-grid-container {
     display: grid;

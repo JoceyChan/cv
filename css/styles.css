@@ -505,9 +505,10 @@ body {
     padding-bottom: 10px;
   }
   #ResumeButton {
-    width: 135px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     font-size: 15px;
+    color: black;
   }
   /* Education and Experience Section */
   .eduandexp-grid-container {
